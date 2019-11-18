@@ -17,18 +17,18 @@ ENFIELD_TENNIS_ACADEMY = [
 ]
 
 def assembled_matrix
-  assembled_matrix = [ENNET_HOUSE,ENFIELD_TENNIS_ACADEMY ]
+ [ENNET_HOUSE, ENFIELD_TENNIS_ACADEMY]
 end
 
 def array_literal_matrix
-  array_literal_matrix = [ENNET_HOUSE.sort, ENFIELD_TENNIS_ACADEMY.sort]
+ [ENNET_HOUSE.sort, ENFIELD_TENNIS_ACADEMY.sort]
 end
 
 def matrix_lookup(matrix, row, column)
-   matrix[row][column]
+   return matrix[row][column]
 end
 
 def matrix_update(matrix, row, column, new_value)
   matrix[row][column] = new_value
-  matrix
+ return matrix
 end
